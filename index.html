@@ -1,214 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#ffffff">
-  <meta name="description" content="Umair Farooq is an IT student at CBIT, software developer, student community leader, and podcast host in Hyderabad.">
-  <title>Umair Farooq | Code with Purpose. Lead with Vision.</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#faf9f6">
+<title>Umair Farooq — Developer, Builder & Creator</title>
+<meta name="description" content="Umair Farooq is an Information Technology student at CBIT Hyderabad: developer, data enthusiast, student leader and podcast host building ideas into technology.">
+<meta property="og:title" content="Umair Farooq — Building Ideas Into Technology">
+<meta property="og:description" content="Developer, data enthusiast, student leader and podcast host. CBIT, Hyderabad.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="portrait.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fraunces:opsz,wght@9..144,400;9..144,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="site-header">
-  <a class="wordmark" href="#home" aria-label="Umair Farooq, home"><span class="wordmark-mark">UF</span><span>Umair Farooq</span></a>
-  <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation"><span></span><span></span></button>
-  <nav id="primary-navigation" class="primary-navigation" aria-label="Main navigation">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="projects.html">Projects</a>
-    <a href="podcast.html">Podcast</a>
-    <a class="nav-contact" href="contact.html">Contact <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <a class="brand" href="#home" aria-label="Umair Farooq, home">UF<span>.</span></a>
+  <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><i></i><i></i></button>
+  <nav id="menu" aria-label="Main">
+    <a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a>
+    <a href="#skills">Skills</a><a href="#podcast">Podcast</a><a class="cta" href="#contact">Get in touch</a>
   </nav>
 </header>
 
+<main id="main">
 <section id="home" class="hero">
   <div class="hero-copy">
-    <p class="hero-name">Umair Farooq</p>
-    <p class="eyebrow"><span class="status-dot"></span> IT STUDENT <span>·</span> DEVELOPER <span>·</span> CREATOR</p>
-    <h1>Code with Purpose.<br>Lead with Vision.<br><span>Create with Impact.</span></h1>
-    <p class="hero-intro">I'm an Information Technology student at CBIT, Hyderabad, exploring software development, building communities, and creating meaningful conversations around technology, education, and careers.</p>
-    <a class="college-link" href="https://www.cbit.ac.in/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> CBIT Hyderabad <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
-    <div class="hero-actions">
-      <a class="button button-primary" href="projects.html">Explore My Projects <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-      <a class="button button-secondary" href="podcast.html">Watch My Podcasts <i class="fa-solid fa-play" aria-hidden="true"></i></a>
-      <a class="button button-text" href="contact.html">Get in Touch <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
-    </div>
-    <div class="quick-contact" aria-label="Quick contact links">
-      <a href="mailto:mirumair7275@gmail.com"><i class="fa-regular fa-envelope" aria-hidden="true"></i> Email</a>
-      <a href="tel:+916006634706"><i class="fa-solid fa-phone" aria-hidden="true"></i> Phone</a>
-      <a href="https://www.instagram.com/mir_umair_farooq" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" aria-hidden="true"></i> Instagram</a>
+    <p class="status"><span class="dot"></span>Open to opportunities &amp; collaborations</p>
+    <p class="name">Umair Farooq</p>
+    <h1>Building ideas<br>into <em>technology.</em></h1>
+    <p class="lead">I'm an Information Technology student, developer and creator exploring the intersection of software engineering, data and entrepreneurship. I enjoy building products, solving problems and creating meaningful experiences.</p>
+    <div class="actions">
+      <a class="btn primary" href="#projects">Explore Projects</a>
+      <a class="btn" href="#podcast">Watch Podcast</a>
+      <a class="btn ghost" href="#contact">Get in Touch →</a>
     </div>
   </div>
-  <div class="hero-portrait-wrap">
-    <div class="portrait-glow" aria-hidden="true"></div>
-    <figure class="hero-portrait">
-      <img src="imga.jpeg" alt="Umair Farooq at work" fetchpriority="high">
-      <figcaption><span>Hyderabad, India</span><span>Learning out loud <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span></figcaption>
-    </figure>
-  </div>
-  <a class="scroll-cue" href="#about"><span>SCROLL TO EXPLORE</span><i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a>
+  <figure class="hero-visual">
+    <div class="frame"><img src="portrait.jpg" width="900" height="1371" alt="Umair Farooq working at his desk" fetchpriority="high"></div>
+    <div class="tag t1"><b>B.E. Information Technology</b><span>CBIT, Hyderabad</span></div>
+    <ul class="roles" aria-label="Roles"><li>Developer</li><li>Data</li><li>Leader</li><li>Creator</li></ul>
+  </figure>
 </section>
 
-<section id="about">
-  <div class="section-kicker"><span>01</span> A LITTLE ABOUT ME</div>
-  <div class="about-layout">
-    <h2 class="section-heading">I’m an IT student at CBIT.</h2>
-    <div class="about-copy">
-      <p>I’m pursuing a B.E. in Information Technology at Chaitanya Bharathi Institute of Technology (CBIT), Hyderabad. I enjoy the craft of software: learning Java, working through data structures and algorithms, and turning ideas into things people can use.</p>
-      <p>Beyond technology, I lead student communities, build institutional and corporate relationships, organize events, and host conversations about careers and ideas. I’m also interested in entrepreneurship and product development.</p>
-      <a class="inline-link" href="#services">More about my work <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-    </div>
-  </div>
-  <div class="principles-row">
-    <div><span class="principle-index">01 / TECHNOLOGY</span><h3>Curiosity, then craft.</h3><p>Java, DSA, software development, and growing knowledge of cloud technologies.</p></div>
-    <div><span class="principle-index">02 / LEADERSHIP</span><h3>Bring people in.</h3><p>AWS Student Builder Club, partnerships, team coordination, and campus events.</p></div>
-    <div><span class="principle-index">03 / STORYTELLING</span><h3>Make ideas travel.</h3><p>Podcasting, technical presentations, and conversations about technology and careers.</p></div>
-  </div>
-</section>
-
-<section id="services" class="services-section">
-  <div class="section-kicker"><span>02</span> HOW I LIKE TO CONTRIBUTE</div>
-  <div class="section-intro-row">
-    <h2 class="section-heading">Different strengths.<br><em>One direction.</em></h2>
-    <p class="section-intro">I work across the product, the people around it, and the stories that help an idea move forward.</p>
-  </div>
-  <div class="service-grid">
-    <article class="service-item"><span class="service-index">01</span><h3>Software & product</h3><p>Java, data structures, algorithms, software development, and early-stage product thinking.</p><span class="service-arrow"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span></article>
-    <article class="service-item"><span class="service-index">02</span><h3>Community & partnerships</h3><p>Student leadership, corporate and institutional relations, team coordination, and event organization.</p><span class="service-arrow"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span></article>
-    <article class="service-item"><span class="service-index">03</span><h3>Research & communication</h3><p>Technical presentations, research exploration, podcast hosting, and content that makes ideas accessible.</p><span class="service-arrow"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span></article>
-  </div>
-</section>
-
-<section id="community" class="community-section">
-  <div class="section-kicker"><span>03</span> LEADERSHIP & COMMUNITY</div>
-  <div class="section-intro-row">
-    <h2 class="section-heading">The work happens<br><em>together.</em></h2>
-    <p class="section-intro">I care about what happens around the technology, too: the people, partnerships, and moments that turn a campus into a community.</p>
-  </div>
-  <div class="leadership-list">
-    <article class="leadership-item"><span class="leadership-number">01</span><div><h3>AWS Student Builder Club</h3><p>Student leadership, peer learning, and bringing more builders into the room.</p></div><span class="leadership-tag">COMMUNITY</span></article>
-    <article class="leadership-item"><span class="leadership-number">02</span><div><h3>Institutional & corporate relations</h3><p>Building relationships between student communities, institutions, and industry.</p></div><span class="leadership-tag">CONNECTIONS</span></article>
-    <article class="leadership-item"><span class="leadership-number">03</span><div><h3>Events & student experiences</h3><p>Planning the details and creating the energy for people to meet, learn, and share.</p></div><span class="leadership-tag">EVENTS</span></article>
-    <article class="leadership-item"><span class="leadership-number">04</span><div><h3>Soft Computing Research Society</h3><p>Previously led the CBIT student chapter, organizing orientations and technical meetups.</p></div><span class="leadership-tag">CBIT</span></article>
-  </div>
-  <div class="recognition-line"><i class="fa-solid fa-award" aria-hidden="true"></i><span>Research presented at SUDHEE 2026</span><span class="recognition-divider">/</span><span>Satellite imaging at Build Nation 2026</span></div>
-</section>
-
-<section id="experience">
-  <div class="section-kicker"><span>04</span> EXPERIENCE & EDUCATION</div>
-  <h2 class="section-heading">Grounded in learning.<br><em>Growing through action.</em></h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Education</h3>
-      <p><strong>B.E. in Information Technology</strong><br>Chaitanya Bharathi Institute of Technology (CBIT), Hyderabad</p>
-      <p><strong>Relevant Coursework:</strong> C/C++ Programming, Data Structures, Circuit Analysis, Green Computing</p>
-    </div>
-    <div class="card">
-      <h3>Leadership</h3>
-      <p><strong>Student Chapter Lead</strong><br>Soft Computing Research Society (SCRS) at CBIT</p>
-      <p>Founded and lead the student chapter, organized orientation sessions and technical meetups</p>
-    </div>
-    <div class="card">
-      <h3>YouTube Journal</h3>
-      <p><strong>Engineering Life Journal</strong><br>YouTube Channel: @Umairf313</p>
-      <p>I document my engineering life and share my thoughts about life based on my own understanding and experiences.</p>
-    </div>
-    <div class="card">
-      <h3>Research</h3>
-      <p><strong>Green Computing Research</strong><br>Paper presented at SUDHEE 2026</p>
-      <p><strong>Satellite Imaging Project</strong><br>Presented at Build Nation 2026 (National Level)</p>
+<section id="about" class="sec reveal">
+  <p class="kicker">01 — About</p>
+  <div class="two">
+    <h2>Someone who builds, leads and shares what he learns.</h2>
+    <div class="prose">
+      <p>I'm pursuing a B.E. in Information Technology at Chaitanya Bharathi Institute of Technology, Hyderabad. I'm drawn to the craft of software: Java, data structures and algorithms, and turning ideas into things people can actually use.</p>
+      <p>Alongside the code, I lead student initiatives, host a podcast and think about how products and communities get built.</p>
+      <ul class="chips">
+        <li>Software development</li><li>Data science &amp; analytics</li><li>Product development</li>
+        <li>Entrepreneurship</li><li>Technology communities</li><li>Podcasting &amp; content</li>
+      </ul>
     </div>
   </div>
 </section>
 
-<section id="skills">
-  <div class="section-kicker"><span>05</span> THE TOOLKIT</div>
-  <h2 class="section-heading">Always learning.<br><em>Always building.</em></h2>
-  <div class="grid">
-    <div class="card">C</div>
-    <div class="card">C++</div>
-    <div class="card">Java</div>
-    <div class="card">Python</div>
-    <div class="card">AutoCAD</div>
-    <div class="card">SolidWorks</div>
-    <div class="card">Tinkercad</div>
-    <div class="card">Data Structures & Algorithms</div>
+<section id="experience" class="sec reveal">
+  <p class="kicker">02 — Experience &amp; Leadership</p>
+  <article class="role">
+    <div class="when"><b>Aug 2026 — Present</b><span>CBIT, Hyderabad</span></div>
+    <div>
+      <h3>Director, Corporate &amp; Institutional Relations</h3>
+      <p class="org">AWS Student Builder Club</p>
+      <ul class="dash">
+        <li>Corporate and institutional relations</li>
+        <li>Partnership coordination</li>
+        <li>Student engagement and community building</li>
+        <li>Technical event initiatives</li>
+        <li>Communication across the club and its stakeholders</li>
+      </ul>
+    </div>
+  </article>
+</section>
+
+<section id="projects" class="sec reveal">
+  <p class="kicker">03 — Featured Projects</p>
+  <h2 class="wide">Products and analysis, honestly labelled.</h2>
+
+  <article class="project">
+    <div class="shot erp" aria-hidden="true">
+      <div class="win"><i></i><i></i><i></i></div>
+      <div class="erp-ui"><aside><u></u><u></u><u></u><u></u></aside><div><s></s><s></s><s></s><p></p><p></p></div></div>
+    </div>
+    <div class="info">
+      <span class="badge concept">Concept</span>
+      <h3>Hamdan ERP</h3>
+      <p>A college-focused ERP platform concept designed to streamline academic and institutional management.</p>
+      <ul class="dash"><li>Academic administration</li><li>Student management</li><li>Institutional workflows</li><li>Centralized management</li><li>Scalable architecture</li></ul>
+      <a class="project-repo" href="https://github.com/Umairfarooq7893/Hamdan" target="_blank" rel="noopener noreferrer">View project repository ↗</a>
+    </div>
+  </article>
+
+  <article class="project flip">
+    <div class="shot safar" aria-hidden="true">
+      <div class="win"><i></i><i></i><i></i></div>
+      <svg viewBox="0 0 400 220" role="presentation"><path d="M20 180 C110 170 120 90 200 100 S320 40 380 50" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="5 6"/><circle cx="20" cy="180" r="6" fill="currentColor"/><circle class="pulse" cx="380" cy="50" r="9" fill="var(--orange)"/></svg>
+      <div class="notice"><i></i>Parent notified via WhatsApp</div>
+    </div>
+    <div class="info">
+      <span class="badge concept">Concept</span>
+      <h3>Safar</h3>
+      <p>A student-focused transportation and carpool management platform.</p>
+      <ul class="dash"><li>Owner dashboard</li><li>Driver interface</li><li>Student transportation management</li><li>Live location tracking</li><li>Parent notifications through WhatsApp</li><li>Backend-powered management</li></ul>
+      <a class="project-repo" href="https://github.com/Umairfarooq7893/SAFAR" target="_blank" rel="noopener noreferrer">View project repository ↗</a>
+    </div>
+  </article>
+
+  <article class="project">
+    <div class="shot data" aria-hidden="true">
+      <div class="win"><i></i><i></i><i></i></div>
+      <div class="bars"><b style="--h:40%"></b><b style="--h:62%"></b><b style="--h:48%"></b><b style="--h:78%"></b><b style="--h:55%"></b><b style="--h:90%"></b><b style="--h:68%"></b></div>
+      <span class="years">2000 — 2023</span>
+    </div>
+    <div class="info">
+      <span class="badge">Data analysis</span>
+      <h3>Global Cause-of-Death Data Patterns &amp; Analysis</h3>
+      <p>An analytical investigation of global mortality patterns, demographic vulnerability, regional variations and cause-of-death transitions (2000–2023).</p>
+      <p class="stack">Python · Pandas · NumPy · Matplotlib · Seaborn · Jupyter Notebook</p>
+      <a class="project-repo" href="https://github.com/Umairfarooq7893/Global-Burden-of-Disease-Regional-Demographic-Analysis-2000-2023-" target="_blank" rel="noopener noreferrer">View project repository ↗</a>
+    </div>
+  </article>
+
+  <div class="earlier">
+    <h3>Earlier work <small>C++ practice projects on GitHub</small></h3>
+    <ul>
+      <li><a href="https://github.com/Umairfarooq7893/Project-Book-Management-System" target="_blank" rel="noopener noreferrer">Book Management System</a></li>
+      <li><a href="https://github.com/Umairfarooq7893/Project-Book-Management-System-with-Sorting-Techniques" target="_blank" rel="noopener noreferrer">Book Management with Sorting</a></li>
+      <li><a href="https://github.com/Umairfarooq7893/Project-Food-Delivery-App" target="_blank" rel="noopener noreferrer">Food Delivery Application</a></li>
+      <li><a href="https://github.com/Umairfarooq7893/Project_Currency_Converter" target="_blank" rel="noopener noreferrer">Currency Converter</a></li>
+      <li><a href="https://github.com/Umairfarooq7893/Project_Unit_Converter" target="_blank" rel="noopener noreferrer">Unit Converter</a></li>
+      <li><a href="https://github.com/Umairfarooq7893/Project_Calculator" target="_blank" rel="noopener noreferrer">Multifunctional Calculator</a></li>
+    </ul>
   </div>
 </section>
 
-<section id="projects">
-  <div class="section-kicker"><span>06</span> SELECTED PROJECTS</div>
-  <h2 class="section-heading">Ideas, made<br><em>real.</em></h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Book Management System</h3>
-      <p>Console-based C++ application for managing book records with add, update, delete, and search functionalities</p>
-      <a href="https://github.com/Umairfarooq7893/Project-Book-Management-System.git" target="_blank" rel="noopener noreferrer">View Repo <i class="fab fa-github"></i></a>
-    </div>
-    <div class="card">
-      <h3>Food Delivery Application</h3>
-      <p>C++ application to simulate food ordering and management using structured programming</p>
-      <a href="https://github.com/Umairfarooq7893/Project-Food-Delivery-App" target="_blank" rel="noopener noreferrer">View Repo <i class="fab fa-github"></i></a>
-    </div>
-    <div class="card">
-      <h3>Currency Converter</h3>
-      <p>C++ program for currency conversion using predefined exchange rates and user input handling</p>
-      <a href="https://github.com/Umairfarooq7893/Project_Currency_Converter" target="_blank" rel="noopener noreferrer">View Repo <i class="fab fa-github"></i></a>
-    </div>
-    <div class="card">
-      <h3>Unit Converter</h3>
-      <p>Multi-functional C++ converter for length, weight, and temperature units</p>
-      <a href="https://github.com/Umairfarooq7893/Project_Unit_Converter" target="_blank" rel="noopener noreferrer">View Repo <i class="fab fa-github"></i></a>
-    </div>
-    <div class="card">
-      <h3>Calculator</h3>
-      <p>Command-line Multifunctional calculator using basics of C++ this is a basic Calculatorfor Addition , subtraction , multiplication, division, finding remainder, finding roots of quadratic , finding index of element in and 1D array, finding Palindrome , finding Armstrong number , checking Colinearity of points </p>
-      <a href="https://github.com/Umairfarooq7893/Project_Calculator" target="_blank" rel="noopener noreferrer">View Repo <i class="fab fa-github"></i></a>
-    </div>
-    <div class="card">
-      <h3>Book Management System with Sorting Techniques</h3>
-      <p>C++ book management project that organizes records and applies sorting techniques for structured data handling</p>
-      <a href="https://github.com/Umairfarooq7893/Project-Book-Management-System-with-Sorting-Techniques.git" target="_blank" rel="noopener noreferrer">View Repo <i class="fab fa-github"></i></a>
-    </div>
+<section id="skills" class="sec reveal">
+  <p class="kicker">04 — Technical Skills</p>
+  <div class="skills">
+    <article class="skill-card">
+      <span class="skill-index">01 / Data</span>
+      <h3>Analysis &amp; Visualization</h3>
+      <div class="skill-tags"><span>Exploratory data analysis</span><span>Data cleaning</span><span>Visualization</span><span>Interpretation</span><span>Insight generation</span></div>
+    </article>
+    <article class="skill-card">
+      <span class="skill-index">02 / Code</span>
+      <h3>Programming Languages</h3>
+      <div class="skill-tags"><span>Java</span><span>JavaScript</span><span>SQL</span><span>Frontend</span><span>Backend</span></div>
+    </article>
+    <article class="skill-card">
+      <span class="skill-index">03 / Build</span>
+      <h3>Web Development</h3>
+      <div class="skill-tags"><span>React</span><span>HTML/CSS</span><span>Node.js</span><span>Express</span><span>REST APIs</span><span>Google Maps</span><span>WhatsApp</span></div>
+    </article>
+    <article class="skill-card">
+      <span class="skill-index">04 / Data</span>
+      <h3>Databases</h3>
+      <div class="skill-tags"><span>PostgreSQL</span><span>Relational design</span><span>SQL queries</span><span>JSON</span></div>
+    </article>
+    <article class="skill-card">
+      <span class="skill-index">05 / Protect</span>
+      <h3>Authentication &amp; Security</h3>
+      <div class="skill-tags"><span>OTP-based login</span><span>Token-based security</span></div>
+    </article>
+    <article class="skill-card">
+      <span class="skill-index">06 / Ship</span>
+      <h3>DevOps &amp; Tools</h3>
+      <div class="skill-tags"><span>Git</span><span>GitHub</span><span>Render</span><span>Cloud deployment</span></div>
+    </article>
+  </div>
+  <div class="skills-cta">
+    <p>Want to see these skills in practice?</p>
+    <a class="btn primary" href="https://github.com/Umairfarooq7893" target="_blank" rel="noopener noreferrer">Explore my GitHub repositories ↗</a>
   </div>
 </section>
 
-<section id="podcast" class="podcast-section">
-  <div class="podcast-copy">
-    <div class="section-kicker"><span>07</span> THE CONVERSATION</div>
-    <p class="podcast-label"><i class="fa-solid fa-microphone-lines" aria-hidden="true"></i> PODCASTS & CONTENT</p>
-    <h2>Curiosity sounds<br><em>better out loud.</em></h2>
-    <p>I share the engineering journey and host conversations around technology, careers, growth, and the ideas worth spending time on.</p>
-    <a class="button button-light" href="https://www.youtube.com/@Umairf313" target="_blank" rel="noopener noreferrer">Find me on YouTube <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
-  </div>
-  <div class="podcast-art" aria-hidden="true"><span class="sound-ring sound-ring-one"></span><span class="sound-ring sound-ring-two"></span><span class="podcast-mic"><i class="fa-solid fa-microphone-lines"></i></span><span class="podcast-art-note">IDEAS IN<br>GOOD COMPANY</span><span class="podcast-art-index">UF / 06</span></div>
-</section>
-
-<section id="contact">
-  <div class="section-kicker"><span>08</span> START A CONVERSATION</div>
-  <div class="contact-layout">
-    <div><h2 class="section-heading">Good things start<br><em>with a hello.</em></h2><p class="contact-intro">Have a project, an event, or an idea you’d like to explore together? I’d be glad to hear from you.</p></div>
-    <div class="contact-links">
-      <a href="mailto:mirumair7275@gmail.com"><span><i class="fa-regular fa-envelope" aria-hidden="true"></i> Email</span><span>mirumair7275@gmail.com <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span></a>
-      <a href="tel:+916006634706"><span><i class="fa-solid fa-phone" aria-hidden="true"></i> Phone</span><span>+91 60066 34706 <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span></a>
-      <a href="https://www.instagram.com/mir_umair_farooq" target="_blank" rel="noopener noreferrer"><span><i class="fa-brands fa-instagram" aria-hidden="true"></i> Instagram</span><span>@mir_umair_farooq <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span></a>
+<section id="podcast" class="sec podcast reveal">
+  <p class="kicker">05 — Podcast &amp; Content</p>
+  <div class="two">
+    <div>
+      <h2>Make space for <em>good questions.</em></h2>
+      <p class="prose-p">I host a podcast and create content around technology, education and careers, with conversations that help students and professionals learn from each other.</p>
+      <ul class="chips"><li>Technology discussions</li><li>Professionals &amp; educators</li><li>Career-focused content</li><li>Educational content</li></ul>
+      <div class="actions"><a class="btn primary" href="https://www.youtube.com/@Umairf313" target="_blank" rel="noopener noreferrer">Watch on YouTube ↗</a><a class="btn" href="https://www.instagram.com/mir_umair_farooq" target="_blank" rel="noopener noreferrer">Follow on Instagram ↗</a></div>
     </div>
+    <div class="player" aria-hidden="true"><span class="play"></span><div class="wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
   </div>
 </section>
 
-<footer class="site-footer">
-  <a class="wordmark" href="#home"><span class="wordmark-mark">UF</span><span>Umair Farooq</span></a>
-  <p>Built with curiosity in Hyderabad, India.</p>
-  <a class="back-to-top" href="#home">Back to top <i class="fa-solid fa-arrow-up" aria-hidden="true"></i></a>
-</footer>
+<section id="education" class="sec reveal">
+  <p class="kicker">06 — Education</p>
+  <div class="role">
+    <div class="when"><b>Present</b><span>Hyderabad, India</span></div>
+    <div><h3>Bachelor of Engineering — Information Technology</h3><p class="org"><a href="https://www.cbit.ac.in/" target="_blank" rel="noopener noreferrer">Chaitanya Bharathi Institute of Technology (CBIT) ↗</a></p></div>
+  </div>
+</section>
 
-<!-- JS -->
+<section id="contact" class="sec contact reveal">
+  <p class="kicker">07 — Contact</p>
+  <h2 class="wide">Let's build something <em>that matters.</em></h2>
+  <p class="prose-p">Have a project, a community initiative, an event or an idea worth exploring? I'd be glad to hear from you.</p>
+  <ul class="links">
+    <li><a href="mailto:mirumair7275@gmail.com"><span>Email</span>mirumair7275@gmail.com</a></li>
+    <li><a href="https://www.linkedin.com/in/umair-farooq-5b9580380/" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span>umair-farooq ↗</a></li>
+    <li><a href="https://github.com/Umairfarooq7893" target="_blank" rel="noopener noreferrer"><span>GitHub</span>Umairfarooq7893 ↗</a></li>
+    <li><a href="https://www.instagram.com/mir_umair_farooq" target="_blank" rel="noopener noreferrer"><span>Instagram</span>@mir_umair_farooq ↗</a></li>
+    <li><a href="https://www.youtube.com/@Umairf313" target="_blank" rel="noopener noreferrer"><span>YouTube</span>@Umairf313 ↗</a></li>
+  </ul>
+</section>
+</main>
+<footer><span>© 2026 Umair Farooq</span><a href="#home">Back to top ↑</a></footer>
 <script src="script.js"></script>
-
 </body>
 </html>

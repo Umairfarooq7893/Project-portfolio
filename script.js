@@ -1,23 +1,26 @@
-const menuButton = document.querySelector('.menu-toggle');
-const navigation = document.querySelector('.primary-navigation');
+const burger = document.querySelector('.burger');
+const menu = document.getElementById('menu');
+const setMenu = (open) => {
+  burger.setAttribute('aria-expanded', String(open));
+  burger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  menu.classList.toggle('open', open);
+};
+burger.addEventListener('click', () => setMenu(burger.getAttribute('aria-expanded') !== 'true'));
+menu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setMenu(false)));
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setMenu(false); });
 
-function closeNavigation() {
-  menuButton.setAttribute('aria-expanded', 'false');
-  menuButton.setAttribute('aria-label', 'Open navigation');
-  navigation.classList.remove('is-open');
-}
+// Reveal on scroll
+const revealEls = document.querySelectorAll('.reveal');
+if ('IntersectionObserver' in window) {
+  const io = new IntersectionObserver((entries) => entries.forEach((en) => {
+    if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+  }), { threshold: 0.12 });
+  revealEls.forEach((el) => io.observe(el));
+} else revealEls.forEach((el) => el.classList.add('in'));
 
-menuButton.addEventListener('click', () => {
-  const isOpen = menuButton.getAttribute('aria-expanded') === 'true';
-  menuButton.setAttribute('aria-expanded', String(!isOpen));
-  menuButton.setAttribute('aria-label', isOpen ? 'Open navigation' : 'Close navigation');
-  navigation.classList.toggle('is-open', !isOpen);
-});
-
-navigation.querySelectorAll('a').forEach((link) => {
-  link.addEventListener('click', closeNavigation);
-});
-
-document.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape') closeNavigation();
-});
+// Active nav link
+const links = [...menu.querySelectorAll('a[href^="#"]:not(.cta)')];
+const spy = new IntersectionObserver((entries) => entries.forEach((en) => {
+  if (en.isIntersecting) links.forEach((l) => l.classList.toggle('active', l.getAttribute('href') === '#' + en.target.id));
+}), { rootMargin: '-45% 0px -50% 0px' });
+links.forEach((l) => { const s = document.querySelector(l.getAttribute('href')); if (s) spy.observe(s); });
